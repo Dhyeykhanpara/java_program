@@ -1,0 +1,15 @@
+package ABCD;
+
+import java.util.Scanner;
+
+public class Practical2 { 
+	public static void main (String[] args) {
+		System.out.print("Enter the value in Meters: ");
+		Scanner sc = new Scanner(System.in);
+	    double num = sc.nextDouble(); 
+	    double feet=num*3.28084;
+	    System.out.println( num + " Meters =" + feet + "feets" );
+	    sc.close();
+	}
+
+}
