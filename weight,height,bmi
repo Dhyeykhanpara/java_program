@@ -1,0 +1,22 @@
+package ABCD;
+
+import java.util.Scanner;
+
+public class Practical3 {
+	public static void main (String[] args) {
+		double weight,height,bmi;
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter your weight in pound: ");
+		weight= input.nextDouble()*0.5359273; // convert pound to kg
+		
+		System.out.print("Enter your height in inches: ");
+		height= input.nextDouble()*0.0254; // convert inches to meters
+		
+		
+		bmi = weight / (height*height);
+		System.out.print("Your bmi is: "+bmi);
+		input.close();
+	}
+
+}
